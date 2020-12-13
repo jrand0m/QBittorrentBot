@@ -8,5 +8,5 @@
     "password": "${QBITTORRENT_PASSWORD}"
   },
   
-  "id": [456, 78987]
+  "id": [${TELEGRAM_USER_IDS}]
 }
