@@ -1,6 +1,6 @@
 import qbittorrentapi
 
-from json_valation import get_configs
+from json_validation import get_configs
 
 
 def qbittorrent_login(func):
