@@ -1,11 +1,11 @@
 {
-  "token": "YOUR TOKEN",
+  "token": "${TELEGRAM_TOKEN}",
 
   "qbittorrent": {
-    "ip": "localhost",
-    "port": 8080,
-    "user": "admin",
-    "password": "adminadmin"
+    "ip": "${QBITTORRENT_IP}",
+    "port": ${QBITTORRENT_PORT},
+    "user": "${QBITTORRENT_USER}",
+    "password": "${QBITTORRENT_PASSWORD}"
   },
   
   "id": [456, 78987]
