@@ -1,3 +1,4 @@
+FROM python:3.7
 ARG TZ
 ARG QBITTORRENT_IP=localhost
 ARG QBITTORRENT_USER=admin
@@ -5,8 +6,6 @@ ARG QBITTORRENT_PORT=8080
 ARG QBITTORRENT_PASSWORD=adminadmin
 ARG TELEGRAM_TOKEN
 ARG TELEGRAM_USER_IDS
-
-FROM python:3.7
 
 ENV TZ=${TZ:-Europe/Rome}
 ENV QBITTORRENT_IP=${QBITTORRENT_IP:-localhost}
@@ -26,5 +25,6 @@ COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 COPY login.json.template ./
 RUN eval "echo \"$(cat ./login.json.template)\">./login.json"
+RUN echo "$(cat ./login.json)"
 COPY . .
 CMD [ "python", "/code/main.py" ]

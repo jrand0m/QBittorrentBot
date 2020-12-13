@@ -1,12 +1,12 @@
 {
-  "token": "${TELEGRAM_TOKEN}",
+  \"token\": \"${TELEGRAM_TOKEN}\",
 
-  "qbittorrent": {
-    "ip": "${QBITTORRENT_IP}",
-    "port": ${QBITTORRENT_PORT},
-    "user": "${QBITTORRENT_USER}",
-    "password": "${QBITTORRENT_PASSWORD}"
+  \"qbittorrent\": {
+    \"ip\": \"${QBITTORRENT_IP}\",
+    \"port\": ${QBITTORRENT_PORT},
+    \"user\": \"${QBITTORRENT_USER}\",
+    \"password\": \"${QBITTORRENT_PASSWORD}\"
   },
   
-  "id": [${TELEGRAM_USER_IDS}]
+  \"id\": [${TELEGRAM_USER_IDS}]
 }
